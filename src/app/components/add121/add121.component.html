@@ -1,0 +1,52 @@
+
+
+<div class="">
+   <div class="head">
+    <h1 class="text-center bg-info p-4">Take & Manage Attendance</h1>
+    <button class="btn btn-info" routerLink="../adminsection">Admin Section</button>
+   </div>
+    <div id="addDate" class="add-data1"  >
+        <ul>
+            <li>
+                <input type="date" class="px-1" id="attendanceDate">
+                <button class="mx-2" class="btn-1" onclick="addDate()">Add Date</button>
+            </li>
+        </ul>
+     
+ </div>
+ 
+ <div id="addStudent" class=" add-data3" >
+     <ul><li>
+        <input type="text" id="studentName" placeholder="Enter Name"  >
+     <button  class="btn-1"   onclick="addStudent()">Add Student</button>
+     </li></ul>
+ </div>
+ <div id="deleteDate" class=" add-data2" >
+    <ul>
+       <li>
+           <select id="dateToDelete" class="" style="padding-left: 130px;">
+              
+           </select>
+    <button class="mx-4" class="btn-1" onclick="deleteDate()">Delete Date</button>
+       </li>
+    </ul>
+</div>
+ <div id="attendanceTable">
+    
+ </div>
+ <div id="attendanceStatus">
+     <table class="table border m-2 table-active table-bordered table-hover">
+         <tr class="bg-info">
+             <th scope="col">ID</th>
+             <th>Name</th>
+             <th>Percentage</th>
+             <th>Status</th>
+         </tr>
+     </table>
+     <div id="attendanceStatus">
+
+     </div>
+ </div>
+ <button  class="functionCal btn btn-info" onclick="calculateAttendance()">Calculate Attendance</button>
+
+</div>

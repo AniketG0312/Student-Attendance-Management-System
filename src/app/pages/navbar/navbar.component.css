@@ -1,0 +1,28 @@
+
+ul li a{
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+margin-right: 50px;
+color: aquamarine;
+
+
+
+}
+.navbar-Box{
+    position: sticky;
+    top: 5px;
+}
+ul li a:hover{
+
+    color: whitesmoke;
+    transform: translate(15%);
+    text-decoration: underline;
+}
+.navbar1{
+    background-color: rgb(42, 27, 27);
+}
+.heading{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}

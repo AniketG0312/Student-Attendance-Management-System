@@ -1,0 +1,16 @@
+p{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+      
+}
+div{
+    margin-top: 1px;
+}
+.footer{
+     
+    position: relative;
+    bottom: 0px;
+    position: fixed;
+}

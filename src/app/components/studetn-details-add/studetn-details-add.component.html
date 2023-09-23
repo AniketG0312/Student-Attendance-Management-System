@@ -1,0 +1,153 @@
+<div class="bgcover container">
+  <nav class="navbar navbar-light bg-success">
+    <div class="container">
+      <h1>Student section</h1>
+      <div class="">
+        <button type="button" class="btn btn-info btn-lg btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+      </div>
+    </div>
+    <div class="">
+      <button class="btn btn-outline-dark bg-info  m-3"><a href="" class="text-black" routerLink="../adminsection">Admin Section</a></button>
+  </div>
+  </nav>
+  <div class="mt-5">
+    <table class="table table-bordered table-hover text-center table-striped ">
+      <thead >
+        <tr>
+          <th  scope="col">Student Id</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Student Email</th>
+          <th scope="col">Mobile Number</th>
+          
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>A</td>
+          <td>K</td>
+          <td>abc@gmail.com</td>
+          <td>789456123</td>
+         
+          <td>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" (click)="poststudentdetails()" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Form Start-->
+        <form [formGroup]="formvalue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" >First Name</label>
+            <input type="text"  formControlName="firstname"   class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Last Name</label>
+            <input type="text" formControlName="lastname" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mobile No.</label>
+            <input type="number"  formControlName="mobile"  class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          
+          
+          
+          
+          
+          
+        </form>
+        <!--Form End-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button"  (click)="poststudentdetails()"   class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

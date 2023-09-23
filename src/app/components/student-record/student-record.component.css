@@ -1,0 +1,22 @@
+
+.profile{
+   
+    width: 120px;
+    height: 120px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 244, 244);
+    border: 1px solid;
+    background-image: url(../../../assets/230875_large_66150861f53e4f488f0d89412e4d0091.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.row{
+    position: absolute;
+    left: 40%;
+}
